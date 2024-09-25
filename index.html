@@ -386,5 +386,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="./NextgenmediaSVGPlugin.min_2.js"></script>
     <script src="./script.js"></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCspS24gJG4ui5zerUjhdzH_cgKhXMYtgE",
+        authDomain: "login-test-775ec.firebaseapp.com",
+        projectId: "login-test-775ec",
+        storageBucket: "login-test-775ec.appspot.com",
+        messagingSenderId: "646000912574",
+        appId: "1:646000912574:web:f8182f07302810502e16ef",
+        measurementId: "G-JMLEE2ZGPR"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
